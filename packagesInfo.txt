@@ -1,0 +1,10 @@
+Here's a concise overview of the packages:
+dependencies:
+express: Web framework for Node.js to handle HTTP requests and build APIs.
+mongoose: MongoDB object modeling tool for managing data and schema in a database.
+jsonwebtoken: For generating and verifying JSON Web Tokens (JWT), used for authentication.
+bcryptjs: For hashing passwords and comparing them securely.
+dotenv: Loads environment variables from a .env file into process.env.
+cors: Middleware for enabling Cross-Origin Resource Sharing (CORS) in APIs.
+cookie-parser: Middleware to parse and manage cookies in requests.
+cloudinary: Cloud-based service to handle image uploads, storage, and manipulation.
