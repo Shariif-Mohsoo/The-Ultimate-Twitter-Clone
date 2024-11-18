@@ -126,4 +126,14 @@ FOR TESTING PURPOSE=>
   "password": "securePassword123",
   "email": "johndoe@example.com"
 }
+
+response:
+{"_id":"673a61d36608b1cffe9b5c31","fullName":"John Doe","username":"johndoe123","email":"johndoe@example.com","followers":[],"followings":[],"profileImg":"","coverImg":""}
+// 
+jenny id: 673a629d497ddfcc47bf3cb6
+FOR LOGIN PURPOSE
+{
+  "username": "johndoe123",
+  "password": "securePassword123"
+}
 */
