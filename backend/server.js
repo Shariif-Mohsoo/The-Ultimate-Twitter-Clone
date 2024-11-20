@@ -5,6 +5,7 @@ import { v2 as cloudinary } from "cloudinary";
 
 import authRoutes from "./routes/auth.routes.js";
 import userRoutes from "./routes/user.routes.js";
+import postRoutes from "./routes/post.routes.js";
 
 import connectMongoDb from "./db/connectMongoDb.js";
 // config for dotenv
@@ -29,6 +30,7 @@ app.use(cookieParser()); //to get token we created for cookie.
 // middleware
 app.use("/api/auth", authRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/posts", postRoutes);
 
 app.listen(PORT, () => {
   console.log(`Listening at port ${PORT}`);
