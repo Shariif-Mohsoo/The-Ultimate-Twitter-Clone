@@ -67,6 +67,7 @@ export const signup = async (req, res) => {
 export const login = async (req, res) => {
   try {
     const { username, password } = req.body;
+    // console.log(username, password);
     // checking whether the user exist or not
     const user = await User.findOne({ username });
     // comparing the user password with store password
@@ -128,12 +129,13 @@ FOR TESTING PURPOSE=>
 }
 
 response:
-{"_id":"673a61d36608b1cffe9b5c31","fullName":"John Doe","username":"johndoe123","email":"johndoe@example.com","followers":[],"followings":[],"profileImg":"","coverImg":""}
-// 
-jenny id: 673a629d497ddfcc47bf3cb6
+{"_id":"674554c840c4e45eb25409f0","fullName":"John Doe","username":"johndoe123","email":"johndoe@example.com","followers":[],"followings":[],"profileImg":"","coverImg":""}
 FOR LOGIN PURPOSE
 {
   "username": "johndoe123",
   "password": "securePassword123"
-}
+  }
+  
+  jenny id: 673a629d497ddfcc47bf3cb6
+{"_id":"6745559e9e723a18cfd01913","fullName":"JonnyDoe","username":"jennydoe123","email":"jennydoe@example.com","followers":[],"followings":[],"profileImg":"","coverImg":""}
 */

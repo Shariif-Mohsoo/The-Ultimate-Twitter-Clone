@@ -9,7 +9,7 @@ export const getUserProfile = async (req, res) => {
   const { username } = req.params;
   try {
     // searching the user in the db.
-    const user = await User.findOne(username).select("-password");
+    const user = await User.findOne({ username }).select("-password");
     // if not found there is no exist.
     if (!user) return res.status(404).json({ Error: "User Not Found" });
     // else send the user back as response
